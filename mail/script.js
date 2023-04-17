@@ -11,24 +11,33 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 */
 
 
+
+
 const myArr = [ 'ale.casu@live.it', 'maurizio@live.it', 'enrico@live.it', 'genziana@tiscali.it', 'madavvero@live.it' ];
 
 console.log(myArr);
 
 const newMail = prompt('Inserisci la tua mail: ');
-
+let hoTrovatoMail = 0;
 
 for ( let i=0; i<=myArr.length; i++)
 {
-   if(newMail == myArr[i])
+    if( newMail == myArr[i])
     {
-        console.log(` ${newMail} è una e-mail autorizzata`);
+        hoTrovatoMail = 1;
     }
-    else{
-        console.log('Spiacenti, e-mail non autorizzata!');
-    }
-} 
+}
+
+if( hoTrovatoMail == 0){
+    console.log('Email non autorizzata');
+}
+else{
+    console.log('Email autorizzata');
+}
+   
   
+
+
 
 
  
