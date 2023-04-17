@@ -18,7 +18,7 @@ console.log(myArr);
 const newMail = prompt('Inserisci la tua mail: ');
 
 
-for ( let i = 0; i = myArr.length; i++)
+for ( let i=0; i<=myArr.length; i++)
 {
    if(newMail == myArr[i])
     {
@@ -27,19 +27,8 @@ for ( let i = 0; i = myArr.length; i++)
     else{
         console.log('Spiacenti, e-mail non autorizzata!');
     }
-    
 } 
   
 
 
- /*
-    for(i=0; i=myArray.lenght; i++)
-    {
-        if(newMail == myArray[i]){
-            console.log('La tu amail è valida, puoi accedere!')
-        }
-        else{
-            console.log('Mail non autorizzata!');
-        }
-    }
-    */
+ 
